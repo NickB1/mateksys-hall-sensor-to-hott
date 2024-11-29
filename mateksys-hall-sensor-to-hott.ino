@@ -34,7 +34,6 @@ float analogReadMilliV(uint8_t pin) {
 }
 
 void loop() {
-
   static bool led = false;
   float voltage = analogReadMilliV(voltagePin) * voltageScaleFactor / 1000.0;
   float current = analogReadMilliV(currentPin) * currentScaleFactor / 1000.0;
